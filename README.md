@@ -106,23 +106,6 @@ Avant de commencer, assurez-vous d'avoir installé :
 - **MySQL 8.0+**
 - **Git**
 
-## 🚀 Installation
-
-1. **Cloner le repository**
-   ```bash
-   git clone https://github.com/HaytamNajam26/TP20.git
-   cd TP20
-   ```
-
-2. **Créer la base de données MySQL**
-   ```sql
-   CREATE DATABASE client_db;
-   CREATE DATABASE car_db;
-   ```
-
-3. **Configurer les fichiers `application.yml`**
-   - Modifier les paramètres de connexion à la base de données dans chaque service
-   - Vérifier les ports et les URLs Eureka
 
 ## ⚙️ Configuration
 
@@ -217,20 +200,16 @@ curl -X POST http://localhost:8080/api/car \
 ```
 
 ## 📸 Captures d'écran
+<img width="1091" height="872" alt="Screenshot 2025-12-28 143106" src="https://github.com/user-attachments/assets/3cdee0a0-a9f8-4ee8-931d-0f7963743604" />
+<img width="1225" height="847" alt="Screenshot 2025-12-28 143036" src="https://github.com/user-attachments/assets/36c21021-379c-40c5-b37b-5c63e37697d8" />
+<img width="1247" height="873" alt="Screenshot 2025-12-28 143011" src="https://github.com/user-attachments/assets/00297e12-4dd6-4313-8c31-0edfa9b43dfe" />
 
-### Dashboard Eureka
-<!-- Ajoutez ici vos captures d'écran du dashboard Eureka -->
-![Dashboard Eureka](screenshots/eureka-dashboard.png)
+<img width="1357" height="877" alt="Screenshot 2025-12-28 142950" src="https://github.com/user-attachments/assets/e5b71072-f8da-4f93-bf79-acf047f13d67" />
 
-### Test des endpoints
-<!-- Ajoutez ici vos captures d'écran des tests d'API -->
-![Test API](screenshots/api-test.png)
+<img width="1352" height="888" alt="Screenshot 2025-12-28 142930" src="https://github.com/user-attachments/assets/f5b2d4f0-045e-47e1-86a7-2960927b1104" />
+<img width="1455" height="1015" alt="Screenshot 2025-12-28 142903" src="https://github.com/user-attachments/assets/5ef1fc57-ae80-492f-a565-4c0bd844836e" />
 
-### Architecture des services
-<!-- Ajoutez ici vos captures d'écran de l'architecture -->
-![Architecture](screenshots/architecture.png)
 
-> **Note :** Créez un dossier `screenshots/` à la racine du projet et ajoutez-y vos captures d'écran.
 
 ## 👤 Auteur
 
