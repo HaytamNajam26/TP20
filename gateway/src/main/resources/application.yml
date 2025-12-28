@@ -1,0 +1,31 @@
+server:
+  port: 8888  # Port de la Gateway
+spring:
+  application:
+    name: Gateway  # Nom du service
+  cloud:
+    discovery:
+      enabled: true  # Active la découverte de services
+    gateway:
+      discovery:
+        locator:
+          enabled: false
+          lower-case-service-id: false
+      routes:
+        - id: client-service
+          uri: lb://SERVICE-CLIENT
+          predicates:
+            - Path=/SERVICE-CLIENT/**
+          filters:
+            - RewritePath=/SERVICE-CLIENT/(?<segment>.*), /$\{segment}
+        - id: car-service
+          uri: lb://SERVICE-CAR
+          predicates:
+            - Path=/SERVICE-CAR/**
+          filters:
+            - RewritePath=/SERVICE-CAR/(?<segment>.*), /$\{segment}
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.example.gateway: DEBUG
