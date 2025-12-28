@@ -170,34 +170,7 @@ Avant de commencer, assurez-vous d'avoir installé :
 - `GET /api/car/{id}` - Récupérer une voiture par ID
 - `POST /api/car` - Créer une nouvelle voiture
 
-### Exemples de requêtes
 
-**Créer un client :**
-```bash
-curl -X POST http://localhost:8080/api/clients \
-  -H "Content-Type: application/json" \
-  -d '{
-    "nom": "Dupont",
-    "prenom": "Jean",
-    "email": "jean.dupont@example.com"
-  }'
-```
-
-**Récupérer tous les clients :**
-```bash
-curl http://localhost:8080/api/clients
-```
-
-**Créer une voiture :**
-```bash
-curl -X POST http://localhost:8080/api/car \
-  -H "Content-Type: application/json" \
-  -d '{
-    "marque": "Toyota",
-    "modele": "Corolla",
-    "annee": 2023
-  }'
-```
 
 ## 📸 Captures d'écran
 <img width="1091" height="872" alt="Screenshot 2025-12-28 143106" src="https://github.com/user-attachments/assets/3cdee0a0-a9f8-4ee8-931d-0f7963743604" />
